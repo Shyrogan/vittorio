@@ -35,8 +35,8 @@ export async function scrape(fetch, brand) {
     });
 
     const contactInfo = {
-      address: contactBlock.find('strong:contains("Address")').next('p').text().trim(),
-      phone: contactBlock.find('strong:contains("Phone")').next('p').text().trim(),
+      address: contactBlock.find('strong:contains("Indirizzo")').next('p').text().trim(),
+      phone: contactBlock.find('strong:contains("Telefono")').next('p').text().trim(),
       email: contactBlock.find('strong:contains("E-mail")').next('p').text().trim(),
       website: contactBlock.find('strong:contains("Web")').next('p').text().trim(),
       socialMedia: socialMedia
